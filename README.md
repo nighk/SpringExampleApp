@@ -6,7 +6,7 @@ It runs using Springs embedded Tomcat server, and an in memory database. So any 
 
 ### Starting the Application
 
-This is a maven project so can be built from the command line using "mvn clean install", and run as a Java application.
+This is a maven project so can be built from the command line using `mvn clean install`, and run as a Java application e.g. `java -jar target/main-0.0.1-SNAPSHOT.jar`
 
 Alternatively load it into your favourite IDE and just run the application from the main method within App.java under src/main/java/springExample
 
@@ -27,3 +27,8 @@ There are some additional URL's provided by the Spring framework. These are as f
 * /h2-console/ - the console for the in memory database, the JDBC URL is "jdbc:h2:mem:testdb", username is "sa" and password is "sa". All this is stored in the application.properties file under src/main/resources/config
 * /actuator - shows information about the application
 * /actuator/health - shows the running status of the application
+
+
+### Testing
+
+There are some example tests under src/test/java. These can be run as standard JUnit tests through your IDE or by running the `mvn test` command.
